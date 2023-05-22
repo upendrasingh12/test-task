@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+.header-border {
+  box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.07);
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.ai-left-wrapper {
+  height: calc(100% - 0px);
+}
+.ai-left-wrapper .ai-sidebar-header {
+  background: #ffffff;
+  padding: 10px;
+  height: 44px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
+  position: relative;
+  z-index: 1;
+}
+.ai-left-wrapper .ai-sidebar-header .ai-header-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+}
+.ai-left-wrapper .ai-sidebar-header .nav-pills .nav-link {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #0c0f3a;
+}
+.ai-left-wrapper .ai-sidebar-header .nav-pills .nav-link.active {
+  background: #0c0f3a;
+  color: #ffffff;
+}
+.ai-left-wrapper .ai-sidebar-header .closebtn {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 20px;
+  border: none;
+  background: transparent;
+}
+.ai-left-wrapper .ai-sidebar-body {
+  padding: 10px;
+}
+
+.ai-wrapper {
+  height: 100%;
+  padding-top: 53px;
+  display: flex;
+}
+.ai-wrapper .ai-left-sidebar {
+  max-width: 330px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.ai-wrapper .ai-right-wrapper {
+  width: 100%;
+}
+
+.product-layer {
+  height: calc(100% - 45px);
+}
+.product-layer h5 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 17px;
+  margin: 0;
+}
+
+.add-layer .layer-add-item {
+  width: 147px;
+  height: 147px;
+}
+.add-layer .layer-add-item .layer-add-item-img {
+  width: 100%;
+  height: 100%;
+}
+.add-layer .layer-add-item .layer-add-item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid transparent;
+}
+.add-layer .layer-add-item .layer-add-item-icon {
+  width: 147px;
+  height: 147px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  background: #fff;
+  border: 2px solid transparent;
+  color: #0c0f3a;
+}
+.add-layer .layer-add-item:hover .layer-add-item-img img {
+  border-color: #0c0f3a;
+}
+.add-layer .layer-add-item:hover .layer-add-item-icon {
+  border-color: #0c0f3a;
+}
+.add-layer .layer-add-item-text p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+  height: 47px;
+  padding: 5px 0 0;
+}
+
+/*============== BROWSE SECTION =================*/
+.ai-left-wrapper.browse-items {
+  position: absolute;
+  z-index: 1;
+  background: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+.ai-left-wrapper.browse-items.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.browser-tabs-body {
+  height: calc(100% - 98px);
+}
+.browser-tabs-body .browse-accordion .accordion-item {
+  background: transparent;
+}
+.browser-tabs-body .browse-accordion .accordion-item .accordion-button {
+  background: transparent;
+  padding: 8px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.browser-tabs-body .browse-accordion .accordion-item .accordion-body {
+  padding: 8px 0;
+}
+.browser-tabs-body .browse-accordion .accordion-item .accordion-body .partner-box a {
+  padding: 15px;
+  background: #ffffff;
+  display: block;
+  height: 75px;
+  border: 2px solid transparent;
+  text-align: center;
+}
+.browser-tabs-body .browse-accordion .accordion-item .accordion-body .partner-box a img {
+  height: 40px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.browser-tabs-body .browse-accordion .accordion-item .accordion-body .partner-box a:hover {
+  border-color: #0c0f3a;
+}
+.browser-tabs-body .browse-accordion .accordion-item .accordion-body .partner-box p {
+  margin: 0;
+  padding: 5px 0 0 0;
+}
+
+.search-action {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+}
+.search-action input {
+  width: 100%;
+  padding: 6px 45px 6px 15px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+}
+.search-action button {
+  position: absolute;
+  right: 16px;
+  top: 13px;
+  display: inline-block;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: #000;
+}/*# sourceMappingURL=main-ai.css.map */
